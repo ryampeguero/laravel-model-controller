@@ -8,7 +8,7 @@ class HomeController extends Controller
 {
     public function index(){
         $movieList = Movie::All();
-        dd($movieList);
-        return view('home');
+        // dd($movieList);
+        return view('home', compact("movieList"));
     }
 }
